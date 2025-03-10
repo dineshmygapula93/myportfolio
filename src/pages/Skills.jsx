@@ -24,6 +24,7 @@ const skillsData = {
     { name: 'SQL', icon: 'SQL-Developer.svg' },
     { name: 'MySql', icon: 'MySQL.svg' },
     { name: 'MongoDB', icon: 'MongoDB.svg' },
+    { name: 'FireBase', icon: 'Firebase.svg' },
     { name: 'AWS', icon: 'AWS.svg' },
     { name: 'Vercel', icon: 'Vercel.svg' },
   ],
