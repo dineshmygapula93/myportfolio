@@ -9,13 +9,13 @@ import Contact from './pages/Contact.jsx'
 import NavBar from '../Components/NavBar.jsx'
 const App = () => {
   return (
-    <div className=''>
+    <div className='flex flex-col min-h-screen'>
       <BrowserRouter>
       <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
-        <Route path='/skills' element={<Skills/>}></Route>
+        <Route path='/skills' element={<Skills/>} ></Route>
         <Route path='/education' element={<Education/>}></Route>
         <Route path='/projects' element={<Projects/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
