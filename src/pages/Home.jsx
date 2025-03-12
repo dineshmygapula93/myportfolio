@@ -16,11 +16,11 @@ export default function Home() {
         <a href="https://www.linkedin.com/in/dinesh-mygapula/" className="hover:text-blue-600" target="_blank" rel="noopener noreferrer">
           <Linkedin size={24} />
         </a>
-        <a href="mygapuladinesh.com" className="hover:text-blue-600">
+        <a href="mygapuladinesh@gmail.com" className="hover:text-blue-600">
           <Mail size={24} />
         </a>
       </div>
-      <a href="/Dinesh_Resume.pdf" download><button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300" >
+      <a href="/Dinesh_Resume.pdf" download><button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300 cursor-pointer" >
         Download CV
       </button></a>
     </div>

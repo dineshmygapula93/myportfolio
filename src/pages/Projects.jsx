@@ -7,33 +7,32 @@ const projects = [
     description: 'This project is designed to showcase the components section in Flipkart.',
     link: 'https://flipkart-pro.vercel.app/',
     category: 'My Projects',
-    image: 'flipkart-replica.png', // Replace with your image URL
+    image: 'flipkart-replica.png', 
   },
   {
     title: 'Weather-app',
     description: 'This is a project mainly built to learn the use of APIs in react.',
     link: 'https://weatherapp93.vercel.app/',
     category: 'My Projects',
-    image: 'weather-app.png', // Replace with your image URL
+    image: 'weather-app.png', 
   },
   {
     title: 'Driver Drowsiness Detection',
     description: 'Driver Drowsiness Monitoring using Convolutional Neural Networks',
     link: null,
     category: 'Academic',
-    image: 'drver.png', // Replace with your image URL
+    image: 'drver.png', 
   },
   {
     title: 'Cab Booking system',
     description: 'This project is built to maintain the drivers and user information in the database..',
     link: null,
     category: 'Academic',
-    image: 'cab.png', // Replace with your image URL
+    image: 'cab.png', 
   },
 ];
 
 const Projects = () => {
-  // Separate projects into categories
   const myProjects = projects.filter(project => project.category === 'My Projects');
   const academicProjects = projects.filter(project => project.category === 'Academic');
 
@@ -42,21 +41,20 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
 
-        {/* My Projects */}
         <h3 className="text-2xl font-semibold mb-4">My Projects</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-10"> {/* Decreased gap between cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-10">
           {myProjects.map((project, index) => (
             <div
               key={index}
               className="bg-white shadow-lg rounded-lg overflow-hidden w-56 h-72 flex flex-col transform transition-transform duration-300 hover:scale-105" // Decreased width
             >
-              <img src={project.image} alt={project.title} className="w-full h-32 object-cover p-1" /> {/* Added padding around the image */}
+              <img src={project.image} alt={project.title} className="w-full h-32 object-cover p-1" />
               <div className="flex flex-col justify-between p-2 h-full">
                 <div>
                   <h4 className="text-xl font-semibold mb-1">{project.title}</h4>
-                  <p className="text-gray-700 mb-1 text-sm line-clamp-3">{project.description}</p> {/* Truncate text */}
+                  <p className="text-gray-700 mb-1 text-sm line-clamp-3">{project.description}</p>
                 </div>
-                <div className="mt-1"> {/* Reduced margin to push link closer to description */}
+                <div className="mt-1"> 
                   {project.link ? (
                     <a
                       href={project.link}
