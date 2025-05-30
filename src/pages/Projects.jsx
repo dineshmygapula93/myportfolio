@@ -17,6 +17,26 @@ const projects = [
     image: 'weather-app.png', 
   },
   {
+    title: 'Fitness App',
+    description: 'This is a project mainly built Using React ,Vite and Tailwind using Rest APIs.',
+    link: 'https://myfitnessapp93.vercel.app/',
+    category: 'My Projects',
+    image: 'fitness-app.png', 
+  },
+  {
+    title: 'AI ChatBot',
+    description: 'This is a project is built using angular and ai apis.',
+    link: 'https://myaichatbot93.netlify.app/',
+    category: 'My Projects',
+    image: 'ai-chatbot.png', 
+  },{
+    title: 'Memes Generator',
+    description: 'This is built using Angular to enable Two Way data binding.',
+    link: 'https://memescreatorapp.netlify.app/',
+    category: 'My Projects',
+    image: 'memesgenerator.png', 
+  },
+  {
     title: 'Driver Drowsiness Detection',
     description: 'Driver Drowsiness Monitoring using Convolutional Neural Networks',
     link: null,
@@ -42,7 +62,7 @@ const Projects = () => {
         <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
 
         <h3 className="text-2xl font-semibold mb-4">My Projects</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
           {myProjects.map((project, index) => (
             <div
               key={index}
